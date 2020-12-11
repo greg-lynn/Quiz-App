@@ -6,3 +6,124 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, Georgia, Times;
+  color: black;
+  margin: 0;
+  background: cover;
+  background-image: url("./images/WorldMapBackground.jpg");
+}
+
+header {
+  padding: 50px 0 0 0;
+  color: slategray;
+  font-size: 28px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.question-and-score {
+  font-size: 22px;
+  font-weight: 450px;
+  color: rgb(46, 212, 60);
+  text-align: center;
+  list-style: none;
+}
+
+.question {
+  color: navy;
+}
+
+.answers {
+  color: slateblue;
+}
+
+div>p {
+  font-size: 22px;
+  font-weight: 625;
+}
+
+button {
+  margin: 8 0 0 0;
+  border-radius: 2px;
+  padding: 10 20;
+  height: auto;
+  font-size: 16px;
+  font-weight: 300px;
+  text-align: center;
+  color: darkslategray;
+  background: yellow;
+  border: 0;
+}
+
+.start-screen fieldset {
+  width: 75%;
+  padding: 45;
+  margin: 50, auto, 0, auto;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: 625;
+  font-size: 22px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.questions-form .question {
+  margin-bottom: 20px;
+  padding: 0 5%;
+  font-size: 22px;
+  font-weight: 500px;
+}
+
+.options ul {
+  list-style: none;
+  margin: 0;
+  text-align: left;
+}
+
+.options span {
+  display: block;
+  border-radius: 2px;
+}
+
+.right-answer {
+  background: wheat;
+  color: green;
+  padding: 10 20;
+  margin: 5 20;
+  border: 2px solid olivedrab;
+}
+
+.wrong-answer {
+  background-color: wheat;
+  color: red;
+  padding: 10 20;
+  margin: 5 20;
+  border: 2px solid olivedrab;
+}
+
+.question-form button {
+  float: left;
+}
+
+#next-question-btn{
+  display: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
